@@ -1,0 +1,17 @@
+.event {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.event-input {
+    border: none;
+    border-bottom: 1px solid;
+    background: none;
+    color: white;
+}

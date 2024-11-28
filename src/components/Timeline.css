@@ -4,6 +4,8 @@
     gap: 10px;
     padding: 20px;
     overflow-x: auto;
+    background-color: #f7f7f7;
+    border-radius: 4px;
   }
   
   .date-row {
@@ -25,21 +27,9 @@
     gap: 5px;
   }
   
-  .event {
-    text-align: center;
-    color: white;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 12px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  
   .controls {
     display: flex;
     justify-content: center;
-    gap: 10px;
   }
   
   button {
@@ -47,8 +37,9 @@
     border: none;
     background-color: #007bff;
     color: white;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+    margin: 5px;
   }
   
   button:hover {

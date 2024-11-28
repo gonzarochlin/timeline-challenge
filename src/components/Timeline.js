@@ -3,8 +3,9 @@ import './Timeline.css';
 import Event from './Event';
 import { getDateRange, getMaxDate, getMinDate } from '../utils/helper';
 
-const Timeline = ({ events }) => {
+const Timeline = ({ events, onEditItem }) => {
     const [zoomLevel, setZoomLevel] = useState(1);
+    const [eventEditing, setEventEditing] = useState();
 
     const calculateLanes = (events) => {
         const sortedEvents = [...events].sort(
@@ -74,6 +75,9 @@ const Timeline = ({ events }) => {
                                     event={event}
                                     startIndex={startIndex}
                                     endIndex={endIndex}
+                                    onEditItem={onEditItem}
+                                    isEditing={eventEditing === event.id}
+                                    handleOnClick={setEventEditing}
                                 />
                             );
                         })}
